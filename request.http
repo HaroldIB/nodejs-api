@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Maria de juan",
+    "age": 25,
+    "email": "madeju.com"
+}
+
+###
+GET http://localhost:9000/api/users/ HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/62a69382d7056170bc1bfaea HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/62a6914d519b598c959c32b1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Maria de juan 2",
+    "age": 25,
+    "email": "madeju.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/62a691b40cc298199085e732 HTTP/1.1
